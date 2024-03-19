@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(-90deg, #7DCE13, #858205);
+            font-family:sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .loading {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loading .line-box {
+            padding: 2px;
+            width: 40%;
+            height: 20px;
+            border: 2px solid white;
+            border-radius: 20px;
+        }
+
+        .loading .line-box .line {
+            height: 20px;
+            border-radius: 20px;
+            background: wheat;
+            animation: loading 2s forwards cubic-bezier(0, 0, 0, 0);
+        }
+
+        @keyframes loading {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="text">
+            <img src="image/logo.png" alt="Loading Image" width="">
+        </div>
+        <div class="loading">
+            <div class="line-box">
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- to open the login page automatically. -->
+    <script>
+        const redirectDelay = 2020;
+    
+        const loginPageURL = 'signin_up.html';
+    
+        function redirectToLoginPage() {
+            window.location.href = loginPageURL;
+        }
+        setTimeout(redirectToLoginPage, redirectDelay);
+    </script>
+
+</body>
+</html>

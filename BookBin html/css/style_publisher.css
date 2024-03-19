@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-90deg, #90C8AC, #F5F0BB);
+}
+
+/**************************Header********************/
+header {
+    background: linear-gradient(-45deg, #73A9AD, #90C8AC);
+    text-align: center;
+    padding: 20px;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+

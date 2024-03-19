@@ -1,0 +1,205 @@
+body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: #90C8AC;
+}
+
+/**********************************search*************************/
+
+
+#search-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#search-container form {
+    display: flex;
+    justify-content: center;
+}
+
+#search-container input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#search-container button.search-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #21cc27;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border: 2px solid #5BB318;
+    border-radius: 5px;
+}
+
+#search-container button.search-button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+/*****************************************LOGO**********************/
+#logo {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+/****************************************Categories******************/
+.catagory {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    background-color: #F5F0BB;
+    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+figure {
+    margin: 0;
+    flex: 1;
+    padding: 5px;
+    background-color: #cfcba1;
+    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/****************************************Exchange******************/
+.exchange-book {
+    text-align: center;
+    padding: 0px;
+}
+
+h2 {
+    text-align: left;
+}
+
+h3 {
+    color: black;
+    text-align: right;
+    padding-right: 30px;
+}
+
+h3:hover {
+    text-decoration: none;
+    color: green;
+}
+
+#exchange {
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 5px;
+    background-color: #73A9AD;
+    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+#exchange img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+    padding: 5px 10px 5px 10px;
+    background-color: #90C8AC;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/****************************************Buy Now******************/
+.buy-now {
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+}
+
+h3 {
+    color: black;
+    text-align: right;
+    padding-right: 30px;
+}
+
+h3:hover {
+    text-decoration: none;
+    color: green;
+}
+
+#buynow {
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 5px;
+    background-color: #68927e;
+    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+#buynow img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+    padding: 5px 10px 5px 10px;
+    background-color: #88c3c7;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/****************************************Footer******************/
+footer {
+    background-color: #51787a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    /* Set a high z-index to ensure it's above other content */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+a:hover {
+    color: black;
+}
+
+i {
+    font-size: 24px;
+}
