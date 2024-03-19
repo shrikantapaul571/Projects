@@ -1,0 +1,104 @@
+/* General styles for the home section */
+section.home {
+    min-height: 91.3vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px; /* Adjust padding as needed */
+  }
+  
+  /* Styles for the content on the left side */
+  .home-content {
+    max-width: 600px; /* Adjust max-width as needed */
+  }
+  
+  .home-content h1 {
+    font-size: 36px; /* Adjust font-size as needed */
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  
+  .home-content .neontech {
+    font-size: 48px; /* Adjust font-size as needed */
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #00ffcc; /* Replace with your main color */
+    position: relative;
+  }
+  
+  .home-content .neontech::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #111; /* Replace with your background color */
+    border-left: 2px solid #00ffcc; /* Replace with your main color */
+    animation: typing 3s steps(10) infinite;
+  }
+  
+  @keyframes typing {
+    40%,
+    60% {
+      left: calc(100% + 30px);
+    }
+  
+    100% {
+      left: 0;
+    }
+  }
+  
+  .home-content h2 {
+    font-size: 24px; /* Adjust font-size as needed */
+    font-weight: 700;
+    color: #333; /* Replace with your text color */
+    margin-bottom: 5px;
+  }
+  
+  .home-content ul {
+    list-style-type: square;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px; /* Adjust margin-left as needed */
+  }
+  
+  .home-content p {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 16px; /* Adjust margin-bottom as needed */
+  }
+  
+  /* Styles for the logo on the right side */
+  .homeLogo {
+    margin-left: 30px; /* Adjust margin-left as needed */
+  }
+  
+  .homeLogo img {
+    max-width: 150px; /* Adjust max-width as needed */
+    height: auto;
+  }
+  
+  /* Styles for social media icons */
+  .home-content .social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00ffcc; /* Replace with your main color */
+    border-radius: 50%;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1); /* Adjust box-shadow as needed */
+    font-size: 20px;
+    color: #00ffcc; /* Replace with your main color */
+    margin: 10px 15px 10px 0; /* Adjust margins as needed */
+    transition: 0.5s ease;
+  }
+  
+  .home-content .social-media a:hover {
+    background: #00ffcc; /* Replace with your main color */
+    color: #333; /* Replace with your text color */
+  }
+  

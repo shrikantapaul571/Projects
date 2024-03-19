@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeonTech/Home</title>
+
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- box icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/style_registration.css" />
+
+</head>
+
+<body>
+
+  <!-- header design -->
+  <header class="header">
+
+    <a href="index.html" class="leftnav">NeonTech</a>
+
+    <nav class="midnav">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="media.html">Videos & Photo Gallery</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About us</a>
+    </nav>
+
+    <div class="rightnav">
+      <a href="Login.html" class="sign">Log in</a>
+      <a href="registration.html" class="sign">Register</a>
+    </div>
+    
+  </header>
+
+
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form action="/submit_registration" method="post">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter Username" name="username">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+        <div class="form-group">
+            <label for="confirmpwd">Confirm Password:</label>
+            <input type="password" class="form-control" id="confirmpwd" placeholder="Confirm Password" name="confirmpwd">
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" class="form-control" id="dob" name="dob">
+        </div>
+        <div class="form-group">
+            <label for="contact">Contact Number:</label>
+            <input type="text" class="form-control" id="contact" placeholder="Enter contact number" name="contact">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+</body>
+
+</html>
