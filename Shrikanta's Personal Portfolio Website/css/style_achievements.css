@@ -174,3 +174,51 @@ body {
   font-size: 2rem;
   color: var(--text-color);
 }
+
+
+
+
+.graphics-section {
+  background: var(--bg-color);
+  padding: 100px 0;
+}
+
+.graphics-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.graphics-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.graphics-section .text-col {
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.graphics-section .text-col h2 {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.graphics-section .text-col a {
+  display: inline-block;
+  background: var(--special-color);
+  color: var(--bg-color);
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  transition: background 0.3s ease;
+}
+
+.graphics-section .text-col a:hover {
+  background: var(--main-color);
+}
