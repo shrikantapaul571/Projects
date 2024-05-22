@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-color: #053B50;
+  --second--bg-color: #176B87;
+  --text-color: #EEEEEE;
+  --main-color: #64CCC5;
+  --special-color: #FFC436;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+
+
+/* For nevigation bar - Start */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 85px;
+  width: 100%;
+  background: var(--second--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+
+/* middle navigation bar */
+.header .midnav a {
+  font-size: 20px;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-left: 25px;
+  transition: .3s;
+}
+
+.header .midnav a:hover,
+.header .midnav a.active {
+  color: var(--special-color);
+}
+
+/* For nevigation bar - END*/
+
+
+
+
+
+
+.contact-info {
+
+  background: var(--second--bg-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-info h2 {
+  font-size: 3.5rem;
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+
+.contact-info ul {
+  font-size: 2.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info li {
+  margin-bottom: 20px;
+}
+
+.contact-info span {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--bg-color);
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: var(--text-color);
+  font-size: 2.5rem;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: var(--special-color);
+}

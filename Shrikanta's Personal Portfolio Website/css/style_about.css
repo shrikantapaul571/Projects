@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-color: #053B50;
+  --second--bg-color: #176B87;
+  --text-color: #EEEEEE;
+  --main-color: #64CCC5;
+  --special-color: #FFC436;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+
+
+/* For nevigation bar - Start */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 85px;
+  width: 100%;
+  background: var(--second--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+
+/* middle navigation bar */
+.header .midnav a {
+  font-size: 20px;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-left: 25px;
+  transition: .3s;
+}
+
+.header .midnav a:hover,
+.header .midnav a.active {
+  color: var(--special-color);
+}
+
+/* For nevigation bar - END*/
+
+
+
+
+
+
+/* About Me page styles */
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.education {
+  background: var(--second--bg-color);
+  margin-top: 70px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.education table {
+  font-size: 20px;
+  font-weight: 400;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.education th, .education td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.education th {
+  background: var(--main-color);
+  color: var(--bg-color);
+}
+
+.skills {
+  background: var(--second--bg-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+.skills li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}

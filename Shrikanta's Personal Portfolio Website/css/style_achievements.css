@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-color: #053B50;
+  --second--bg-color: #176B87;
+  --text-color: #EEEEEE;
+  --main-color: #64CCC5;
+  --special-color: #FFC436;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+
+
+/* For nevigation bar - Start */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 85px;
+  width: 100%;
+  background: var(--second--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+
+/* middle navigation bar */
+.header .midnav a {
+  font-size: 20px;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-left: 25px;
+  transition: .3s;
+}
+
+.header .midnav a:hover,
+.header .midnav a.active {
+  color: var(--special-color);
+}
+
+/* For nevigation bar - END*/
+
+
+
+.top-section {
+  background: var(--bg-color);
+  padding: 100px 0;
+}
+
+.top-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.top-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-section .image-col {
+  flex-basis: 40%;
+  margin-right: 5%;
+}
+
+.top-section .image-col img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-section .text-col {
+  flex-basis: 55%;
+}
+
+.top-section .text-col h2 {
+  font-size: 3rem;
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+
+.top-section .text-col li {
+  font-size: 1.5rem;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+.logos-section {
+  background: var(--bg-color);
+  padding: 100px 0;
+}
+
+.logos-section h1{
+  font-size: 50px;
+}
+
+.logos-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.logos-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logos-section .logo-col {
+  position: relative;
+  width: 20%;
+  margin-bottom: 50px;
+}
+
+.logos-section .logo-col img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logos-section .logo-col .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.logos-section .logo-col:hover .overlay {
+  opacity: 1;
+}
+
+.logos-section .logo-col .overlay p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: var(--text-color);
+}
